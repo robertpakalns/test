@@ -5,7 +5,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - run: npm install electron@10.4.7 electron-builder --save-dev
+      -run: npm install electron@10.4.7 electron-builder --save-dev
 
       -run: npm run
 
