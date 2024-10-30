@@ -8,8 +8,6 @@ win:
   artifactName: "${name}-setup-win-${arch}-${version}.${ext}"
 mac:
   target: dmg
-  arch:
-    - x64
   icon: "src/assets/icon.icns"
   artifactName: "${name}-setup-mac-${version}.${ext}"
 linux:
