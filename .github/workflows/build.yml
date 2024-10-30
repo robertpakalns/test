@@ -5,5 +5,6 @@ jobs:
     steps:
       - run: node --version
       - run: npm --version
-      - run: npx electron --version
-      - run: npx electon-builder --version
+      - run: npm install electron electron-builder
+      - run: electron --version
+      - run: electon-builder --version
