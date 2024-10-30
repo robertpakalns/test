@@ -5,11 +5,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - run: node --version
-      - run: npm --version
-      - run: npm install electron@10.4.7 electron-builder
-      - run: npx electron --version
-      - run: npx electron-builder --version
+      - run: npm install electron@10.4.7 electron-builder --save-dev
 
       - name: Get version and name from package.json
         id: get_version_name

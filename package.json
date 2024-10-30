@@ -1,5 +1,6 @@
 {
   "name": "test",
+  "description": "test-repo",
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
@@ -8,8 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^10.4.7",
     "electron-builder": "^25.1.8"
   }
