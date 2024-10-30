@@ -2,6 +2,8 @@ on: push
 jobs:
   first:
     runs-on: windows-latest
+    permissions:
+      contents: write
     steps:
       - run: node --version
       - run: npm --version
