@@ -7,7 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install electron@10.4.7 electron-builder --save-dev
-      - run: npm run
 
       - name: Get version and name from package.json
         id: get_version_name
@@ -21,8 +20,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ steps.get_version_name.outputs.version }}
-          name: Release ${{ steps.get_version_name.outputs.version }}
+          tag_name: v$(node -p "require('./package.json').version")
+          name: Release $(node -p "require('./package.json').version")
           draft: true
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
