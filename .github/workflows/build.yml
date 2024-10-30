@@ -12,6 +12,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          tag_name: v$(node -p "require('./package.json').version")
+          name: Release $(node -p "require('./package.json').version")
           draft: true
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
