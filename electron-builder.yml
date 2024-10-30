@@ -1,4 +1,5 @@
 productName: Voxtulate Client
+npmRebuild: false
 directories:
   output: "dist"
 win:
