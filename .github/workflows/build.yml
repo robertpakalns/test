@@ -23,7 +23,6 @@ jobs:
           draft: true
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: dist/*
 
       - run: npm run build
         env:
