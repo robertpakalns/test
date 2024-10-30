@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "electron .",
-    "build": "electron-builder",
-    "test": "echo test"
+    "build": "electron-builder"
   },
   "author": "",
   "license": "ISC",
