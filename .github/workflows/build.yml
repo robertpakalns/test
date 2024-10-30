@@ -6,8 +6,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      # - run: npm install electron@10.4.7 electron-builder --save-dev
-      - run: npm install electron-builder --save-dev
+      - run: npm install electron@10.4.7 electron-builder --save-dev
 
       - uses: softprops/action-gh-release@v2.0.6
         env:

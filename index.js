@@ -8,4 +8,5 @@ const createWindow = () => {
     mainWindow.loadURL("https://voxiom.io")
 }
 
+app.commandLine.appendSwitch("disable-frame-rate-limit")
 app.whenReady().then(createWindow)
