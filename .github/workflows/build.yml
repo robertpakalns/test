@@ -7,4 +7,4 @@ jobs:
       - run: npm --version
       - run: npm install electron electron-builder
       - run: npx electron --version
-      - run: npx electon-builder --version
+      - run: npx electron-builder --version
