@@ -10,7 +10,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - run: npm install electron@10.4.7 electron-builder --save-dev
+      - run: npm install electron@10.4.7 electron-builder@23.0.2 --save-dev
 
       - uses: actions/setup-node@v4
         with:
