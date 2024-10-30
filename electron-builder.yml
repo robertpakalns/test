@@ -6,15 +6,15 @@ win:
   target:
     - target: nsis
   icon: "src/assets/icon.png"
-  artifactName: "${name}-setup-win-${arch}-${version}.${ext}"
+  artifactName: "${name}-win.${ext}"
 mac:
   target: dmg
   icon: "src/assets/icon.icns"
-  artifactName: "${name}-setup-mac-${version}.${ext}"
+  artifactName: "${name}-mac.${ext}"
 linux:
   target:
     - AppImage
     - tar.gz
   category: Game
   icon: "src/assets/icon.png"
-  artifactName: "${name}-${version}-linux-${arch}.${ext}"
+  artifactName: "${name}-linux.${ext}"

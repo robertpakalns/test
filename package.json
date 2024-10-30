@@ -1,6 +1,6 @@
 {
-  "name": "test",
-  "description": "test-repo",
+  "name": "voxtulate-client",
+  "description": "Voxtulate Client",
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
